@@ -6,3 +6,5 @@
     <input type="text" bind:value={count}>
     <button onclick={() => count = count + 1}>Count</button>
 </div>
+
+<a href="./about/temperature.svelte">temperature converter</a>
