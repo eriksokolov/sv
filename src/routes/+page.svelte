@@ -7,4 +7,4 @@
     <button onclick={() => count = count + 1}>Count</button>
 </div>
 
-<a href="./about/temperature.svelte">temperature converter</a>
+<a href="./temperature/">temperature converter</a>
