@@ -1,51 +1,45 @@
 <script>
-	let four = 4;
-    let pic = "favicon.png";
-    let none = "none"
-    
-    function change() {
-        pic = "malevich.jpg"
-        none = "hey"
-    }
-    
+let arr = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+let border = "2px solid white"
+
+const changecss= event => event.target.style.border  = "2px solid  orange";
+const revertcss= event => event.target.style.border = border; 
+
 </script>
-
 <style>
-:global(body) {
-	height: 100%;
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+:global(body){
+    margin:0;
+    display: flex;
+    justify-content: center;
+    
+    
 }
-
-.board {
-	background-color: black;
-	width: 400px;
-	height: 400px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(2, 1fr);
-	gap: 2px;
+.board{
+    background-color: green;
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
 }
+.key{
+    background-color:black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    border:2px solid white;
+    align-items: center;
 
-.field {
-	border: 1px solid white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.field img {
-	width: 80%;
-	height: auto;
 }
 </style>
 
-<div class="board">
-	{#each Array(four) as _, i}
-		<div class="field">
-			<img src="/{pic}" alt="placeholder" on:click={change()} style="display:{none};"/>
-		</div>
-	{/each}
+<div class = "board">
+    {#each arr as item, i} 
+        <div class = "key" 
+            on:mouseenter={changecss}
+            on:mouseleave={revertcss}
+        >
+            {item}
+        </div>
+    {/each}
 </div>
