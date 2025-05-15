@@ -1,10 +1,20 @@
 <script>
 let arr = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
 let border = "2px solid white"
+let hoveredIndex = null;
+let selectedIndex = null;
 
-const changecss= event => event.target.style.border  = "2px solid  orange";
-const revertcss= event => event.target.style.border = border; 
-
+const changecss= (event, i) => {
+    event.target.style.border  = "2px solid  orange";
+    hoveredIndex = i;
+};
+const revertcss= event => {
+    event.target.style.border = border; 
+    hoveredIndex = null;
+}
+const toggleSelect = (i) => {
+    selectedIndex = selectedIndex === i ? null :i;
+};
 </script>
 <style>
 :global(body){
@@ -35,11 +45,17 @@ const revertcss= event => event.target.style.border = border;
 
 <div class = "board">
     {#each arr as item, i} 
-        <div class = "key" 
-            on:mouseenter={changecss}
+        <div 
+            class = "key" 
+            on:mouseenter={(e) => changecss(e, i)}
             on:mouseleave={revertcss}
+            on:click={() => toggleSelect(i)}
         >
-            {item}
+            {#if hoveredIndex === i || selectedIndex === i}
+                <img src="/favicon.png" alt="icon" />
+            {:else}
+                {item}
+            {/if}
         </div>
     {/each}
 </div>
