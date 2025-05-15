@@ -39,7 +39,6 @@ const toggleSelect = (i) => {
     justify-content: center;
     border:2px solid white;
     align-items: center;
-
 }
 </style>
 
@@ -52,7 +51,12 @@ const toggleSelect = (i) => {
             on:click={() => toggleSelect(i)}
         >
             {#if hoveredIndex === i || selectedIndex === i}
-                <img src="/favicon.png" alt="icon" />
+                <img 
+                    src="/favicon.png" 
+                    alt="favicon" 
+                    class="favicon"
+                    style="opacity: {selectedIndex === i ? 1: 0.5};"
+                    />
             {:else}
                 {item}
             {/if}
