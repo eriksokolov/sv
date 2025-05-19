@@ -18,6 +18,7 @@ function funion() {
     euppertext = "Hello, I am Erik, I am German, I love studying russian, love to read and want to become a front end developer."
 }
 </script>
+<marquee>The world is yours</marquee>
 
 <div id="title">{etitle}</div>
 
