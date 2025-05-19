@@ -3,6 +3,8 @@
     let select = "";
     let plus = "+"; 
     let minus = "-";
+    let times = "*";
+    let divide = "/";
     let equals = "=";
     let result = ""
     let reset = "esc";
@@ -24,6 +26,12 @@
     </button>
     <button on:click={() => select = select + minus}>
         {minus}
+    </button>
+    <button on:click={() => select = select + times}>
+       {times}
+    </button>
+    <button on:click={() => select = select + divide}>
+        {divide}
     </button>
 </div>
 <div>
