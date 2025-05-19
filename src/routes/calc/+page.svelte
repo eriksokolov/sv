@@ -1,51 +1,38 @@
 <script>
-    let tiles = [1,2,3,4,5,6,7,8,9];
-    let selected = [];
-    let result = 0;
-    let tools = [
-        (a,b) => a+b,
-        (a,b) => a-b,
-        (a,b) => a*b,
-        (a,b) => a/b
-    ]
-    let toolsign = [
-        "+",
-        "-",
-        "*",
-        "/",
-    ]
+    let numpad = [1,2,3,4,5,6,7,8,9];
+    let select = "";
+    let plus = "+"; 
+    let minus = "-";
+    let equals = "=";
+    let result = ""
+    let reset = "esc";
 
-
+    function calculate() {
+            result = eval(select);
+    }
 </script>
-<style>
-.key {
-    background-color:blueviolet;
-    border: 1px solid white;
-}
-.reset{
-    background-color:forestgreen;
-}
-.tools{
-    background-color:orange;
-}
-</style>
+<style></style>
 
-{#each tiles as key}
-    <div class="key" on:click={() => selected = [...selected, key]}>
-        {key}
-    </div>
-{/each}
-<hr>
-<p>1. {selected.join()}</p>
-<p>2. {result}</p>
-<b class="reset" on:click={() => {
-    selected = [];
-    result = 0;
-}}>esc</b>
-{#each tools as tool, i}
 <div>
-    <b class="tools"
-        on:click={tools[i]} 
-    >{toolsign[i]}</b>
+    {#each numpad as key}
+        <button on:click={() => select += key}> {key}</button>    
+    {/each}
 </div>
-{/each}
+<div>
+    <button on:click={() => select = select + plus}> 
+        {plus}        
+    </button>
+    <button on:click={() => select = select + minus}>
+        {minus}
+    </button>
+</div>
+<div>
+    <button on:click={calculate()}>
+        {equals}
+    </button>
+</div>
+<div>
+    <button on:click={()=> select = ""}>{reset}</button>
+</div>
+<p>{select}</p>
+<p>{result}</p>
