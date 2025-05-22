@@ -1,7 +1,17 @@
 <script>
-    let name = "Foo Bar";
-    let email = "foobar@mail.com";
-    let phone = "0982734980";
+    let name = "Name";
+    let email = "Mail@mail.";
+    let phone = "teleph0982734980";
+
+    let school = "mguniversity"
+    let degree = "degree of bachelor by ligma";
+    let edudate = "date 24.24.2024";
+
+    let company = "company usss"
+    let position = "posiCBeDOtion"
+    let pracdate = "25.25.2025 date"
+
+
 
 </script>
 <style>
@@ -16,19 +26,25 @@
 }
 .left-container{
     background-color: grey;
+}
+.page{
+    margin: 5rem;
+    background-color: white;
+    height: 200vh;
+}
+.head-container{
     display: flex;
     align-content: center;
     justify-content: center;
-
-}
-.page{
-    margin: 1rem;
-    padding: 20rem 15rem;
-    background-color: white;
-}
-.head-container{
-    background-color: blue;
+    background-color: darkblue;
     color: white;
+    gap: 1rem;
+}
+.left-education{
+    margin: 1rem;
+}
+.left-practical{
+    margin: 1rem;
 }
 
 .right-container{
@@ -42,31 +58,44 @@
     <div class="left-container">
         <div class="page">
             <div class="head-container">
-            <p>{name}</p>
-            <p>{email}</p>
-            <p>{phone}</p>
+                <p>{name}</p>
+                <p>{email}</p>
+                <p>{phone}</p>
             </div>
+            <div class="left-education">
+                <h2>education</h2>
+                <p>{school}</p>
+                <p>{degree}</p>
+                <p>{edudate}</p>
+            </div>
+            <div class="left-practical">
+                <h3>Practical Experience</h3>
+                <p>{company}</p>
+                <p>{position}</p>
+                <p>{pracdate}</p>
+            </div>
+
         </div>
     </div>
 
     <div class ="right-container">
         <div class="general-container">
             <p>General information</p>
-            <input placeholder="name">
-            <input placeholder="email">
-            <input placeholder="phone">
+            <input placeholder="name" bind:value={name}>
+            <input placeholder="email" bind:value={email}>
+            <input placeholder="phone" bind:value={phone}>
         </div>
         <div class="education-container">
             <p>Education</p>
-            <input placeholder="school">
-            <input placeholder="degree">
-            <input placeholder="date">
+            <input placeholder="school" bind:value={school}>
+            <input placeholder="degree" bind:value={degree}>
+            <input placeholder="date" bind:value={edudate}>
         </div>
         <div class="practical-container">
             <p>practical experience</p>
-            <input placeholder="company">
-            <input placeholder="position">
-            <input placeholder="date">
+            <input placeholder="company" bind:value={company}>
+            <input placeholder="position" bind:value={position}>
+            <input placeholder="date" bind:value={pracdate}>
         </div>
     </div>
 </div>
