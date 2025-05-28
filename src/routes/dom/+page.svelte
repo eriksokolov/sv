@@ -1,12 +1,14 @@
 <script>
     import {onMount, onDestroy} from 'svelte';
 
-    const funion = () => {
+    const funion = (e) => {
         console.log('foo');
-        let head = document.querySelector('head');
-        let newTitle = document.createElement('title');
+        let body = document.querySelector('body');
+        let newTitle = document.createElement('div');
         newTitle.textContent = "foo";
-        head.appendChild(newTitle);
+        body.appendChild(newTitle);
+        console.log(e.target);
+        newTitle.innerHTML = e.type; 
     }
 
     onMount(() => {
