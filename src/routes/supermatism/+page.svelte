@@ -15,6 +15,6 @@
 <div class="canvas">
   <svg viewBox="0 0 1 1">
     <polygon points="0.5,0.9 0.5,0.7 0.7,0.7 0.7,0.9" fill="orange"></polygon>
-    <polygon points="0.6,0.6 0.6,0.5 0.8,0.5 0.8,0.6" fill="black"></polygon>
+    <polygon points="0.6,0.6 0.6,0.5 0.8,0.5 0.8,0.6" fill="black" transform="rotate(-22 0.6 0.6)"></polygon>
   </svg>
 </div>
