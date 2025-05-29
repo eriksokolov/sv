@@ -134,3 +134,16 @@
         </div>
     </div>
 </div>
+<section class="tabs">
+    <div class="container">
+        <div id="tab-1" class="tab-item tab-border">
+            <p class="hide-sm">Cancel Anytime</p>
+        </div>
+                <div id="tab-1" class="tab-item tab-border">
+            <p class="hide-sm">Cancel Anytime</p>
+        </div>
+         <div id="tab-1" class="tab-item tab-border">
+            <p class="hide-sm">Cancel Anytime</p>
+        </div>
+    </div>
+</section>
