@@ -15,7 +15,7 @@
         "header header"
         "content orange"
         "footer footer";
-        background-color: #f3f3f3;
+        background-color: #eae6db;
         font-family: Arial;
     }
 
@@ -25,7 +25,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: "left right";
         background-color: #000; 
-        color: white;
+        color: #eae6db;
     }
     .left-header{
         grid-area: left;
@@ -59,36 +59,86 @@
         width: 100%;
         grid-area: content;
         padding: 1rem;
+        margin-top: 1rem;
+        padding-bottom: 6rem;
+        display:grid;
+        align-content: space-between;
+        transform: rotate(-10deg);
     }
-    .red-content{
-        height: 3rem;
-        width: 6rem;
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px;
-        background-color:red;
-        color: white;
-    }
+    
     .orangeContainer{
         padding: 1rem;
-        padding-right: 2rem;
         grid-area: orange;
         display: grid;
         align-items: end;
-        justify-content: end;
+        justify-content: start;
+    }
+    .first-content{
+        height: 4rem;
+        width: 6rem;
+        background-color: #da9b01;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20rem;
+    }
+    .blue-content{
+        height: 2.5rem;
+        margin-left: 5rem;
+        background-color: #150937;
+        color: white;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+    .latter-content{
+        display:grid;
+        margin: 0;
+        transform: rotate(5deg)
+    }
+    .black-content {
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #upper-black{
+        height: 3rem;
+        width: 4rem;
+        margin-left: 15rem;
+    }
+    .red-content {
+        height: 6rem;
+        width: 22rem;
+        background-color:#e01e00;
+        color: #eae6db;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12rem;
+        font-size: 4rem;
+        font-family:"sans-serif";
+    }
+    .latter-content .black-content{
+        margin-left: 24rem;
+        height: 6rem;
+        font-size: 3rem;
     }
     .orange-square{
-        height: 20rem;
-        width: 20rem;
-        background-color:orange;
+        height: 25rem;
+        width: 25rem;
+        background-color:#da9b01;
+        padding: 1rem;
+        margin-left: 2rem;
     }
     .footerContainer{
         grid-area: footer;
         display: flex;
         align-items: center;
-        background-color: #008;
-        color: white;
+        background-color: #150937;
+        color: #eae6db;
         padding-left: 1rem;
     }
 </style>
@@ -107,12 +157,30 @@
     </div>
 </div>
 <div class="contentContainer">
-    <div class="red-content">
-        <p>Content</p>
+    <div class="first-content">
+        <p><code>01001000 01101001</code></p>
+    </div>
+    <div class="blue-content">
+        <p>Herzlich Willkommen!</p>
+    </div>
+    <div class="black-content" id="upper-black">
+        <p>Salut!</p>
+    </div>
+    <div class="latter-content">
+        <div class="red-content">
+            <p>Привет!</p>
+        </div>
+        <div class="black-content">
+            <p>Hello!</p>
+        </div>
     </div>
 </div>
 <div class="orangeContainer">
-    <div class="orange-square"></div>
+    <div class="orange-square">
+        <p><em><code>
+            This is my homepage. Welcome. I've created it on June 2nd 2025. 
+        </code></em></p>
+    </div>
 </div>
 <div class="footerContainer">
     <p>About</p>
