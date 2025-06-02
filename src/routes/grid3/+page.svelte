@@ -86,11 +86,12 @@
         height: 2.5rem;
         margin-left: 5rem;
         background-color: #150937;
-        color: white;
+        color: #eae6db;
         display:flex;
         align-items: center;
         justify-content: center;
         font-size: 1.5rem;
+        font-family: "sans-serif";
     }
     .latter-content{
         display:grid;
@@ -99,7 +100,7 @@
     }
     .black-content {
         background-color: black;
-        color: white;
+        color: #eae6db;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -108,6 +109,7 @@
         height: 3rem;
         width: 4rem;
         margin-left: 15rem;
+        transform: rotate(2deg);
     }
     .red-content {
         height: 6rem;
@@ -132,6 +134,9 @@
         background-color:#da9b01;
         padding: 1rem;
         margin-left: 2rem;
+    }
+    .orange-square p{
+        transform: rotate(-1deg)
     }
     .footerContainer{
         grid-area: footer;
@@ -177,9 +182,20 @@
 </div>
 <div class="orangeContainer">
     <div class="orange-square">
-        <p><em><code>
-            This is my homepage. Welcome. I've created it on June 2nd 2025. 
-        </code></em></p>
+        <p><code>
+            This is my homepage. Welcome. (I've created it on June 2nd 2025.) <br> <br>
+            I consider this to be my first <em>real</em> website.
+            The intention is, and always will be, to have fun, to experiment, 
+            to continously get better.<br><br>
+            There is no specific goal in mind - well, I just want <em>it</em> to become a habit.
+            I mean studying, be it programming/scripting/devloping/... or anything else like learning a new language.
+            <br><br>
+            The lines are to blurry, all I know is, I love tech. Software AND Hardware. 
+            <br><br>
+            I want to learn more about network administration,
+            I feel like, people miss this topic completly. Well, it wasn't on my radar, until recently.
+
+        </code></p>
     </div>
 </div>
 <div class="footerContainer">
