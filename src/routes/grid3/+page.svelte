@@ -183,17 +183,19 @@
 <div class="orangeContainer">
     <div class="orange-square">
         <p><code>
-            This is my homepage. Welcome. (I've created it on June 2nd 2025.) <br> <br>
+            This is my home page. <strong>Welcome</strong>. (I've created it on June 2nd 2025.) <br> <br>
             I consider this to be my first <em>real</em> website.
-            The intention is, and always will be, to have fun, to experiment, 
-            to continously get better.<br><br>
+            <br><br>
             There is no specific goal in mind - well, I just want <em>it</em> to become a habit.
-            I mean studying, be it programming/scripting/devloping/... or anything else like learning a new language.
             <br><br>
-            The lines are to blurry, all I know is, I love tech. Software AND Hardware. 
+            By <em>it</em> I mean studying, be it programming/scripting/devloping/... 
+            or something completely unrelated, like learning an actual language.
             <br><br>
-            I want to learn more about network administration,
-            I feel like, people miss this topic completly. Well, it wasn't on my radar, until recently.
+            The lines are to blurry, all I know is, <strong>I love</strong> tech. Software AND <strong>Hardware</strong>. 
+            <br><br>
+            Currently I want to learn more about network administration,
+            I feel like it is totally overlooked. 
+            Well, it certainly was not on <em>my</em> radar, until recently.
 
         </code></p>
     </div>
