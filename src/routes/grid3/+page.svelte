@@ -48,6 +48,10 @@
     .right-header p{
         padding-right: 1rem;
     }
+    .right-header a{
+        all: unset;
+        padding-right: 1rem;
+    }
     
     .logo{
         height: 2rem;
@@ -157,7 +161,7 @@
         <div class="logoName"><p>QWERik9</p></div>
     </div>
     <div class="right-header">
-        <p>About</p>
+        <a href="https://github.com/erikstankevich">Github</a>
         <p>Blog</p>
     </div>
 </div>
