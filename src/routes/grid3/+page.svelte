@@ -161,8 +161,7 @@
         <div class="logoName"><p>QWERik9</p></div>
     </div>
     <div class="right-header">
-        <a href="https://github.com/erikstankevich">Github</a>
-        <p>Blog</p>
+        <a href="https://github.com/erikstankevich">Projects</a>
     </div>
 </div>
 <div class="contentContainer">
