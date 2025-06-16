@@ -1,91 +1,109 @@
 <style>
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-:global(body){
-    height: 100vh;
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto;    
-    font-family: 'EB Garamond';
-    justify-content: center;
-    align-content: center;
-    background-color: grey;
 
+:global(body) {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  font-family: 'EB Garamond';
+  background-color: grey;
 }
-.Card{
-    padding: 1rem;
-    padding-bottom: 0.6rem;
-    height: 11rem;
-    width: 19rem;
-    background-color: #eae6db;
-    box-shadow: 0 2px 2px  rgba(0, 0, 0, 0.5);
-    display: grid;
-    grid-template-areas: 
-    "Head"
-    "Center"
-    "Tail";
-    align-content: space-between;
-}
-.Head{
-    grid-area: Head;
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.8rem;
 
+.Card {
+  position: relative;
+  padding: 1rem;
+  height: 11rem;
+  width: 19rem;
+  background-color: #eae6db;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
 }
-.Head a{
-    all: unset;
-    cursor: pointer;
+
+.Head {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
 }
-#at{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    font-size: 0.6rem;
+
+.Head a {
+  all: unset;
+  cursor: pointer;
 }
-.Center{
-    grid-area: Center;
-    display: grid;
-    justify-content: center;
-    align-content: center;
+
+#at {
+  font-size: 0.6rem;
 }
-#Center-head{
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: center;
+
+.Small-Head {
+  font-size: 0.6rem;
+  text-align: center;
 }
-#Center-tail{
-    display: flex;
-    justify-content: center;
-    font-size: 0.8rem;
+
+.Center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
-.Tail{
-    grid-area: Tail;
-    display: flex;
-    justify-content: space-around;
-    font-size: 0.6rem;
+
+#Center-head {
+  font-size: 1.1rem;
+}
+
+#Center-tail {
+  font-size: 0.8rem;
+}
+
+.Tail {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 0.6rem;
+}
+
+.Card p,
+.Card a,
+#Center-head,
+#Center-tail {
+  color: #3a2f1c;
+  text-shadow:
+    0.8px 0.8px 0 #c8c4ba,
+   -0.8px -0.8px 0 #f5f2e7;
 }
 </style>
+
 <div class="Card">
-    <div class="Head">
-        <div class="Left-Head">
-            <p>21estankevich</p>
-            <p id="at">@gmail.com</p>
-        </div>
-        <div class="Right-Head">
-            <a href="https://github.com/erikstankevich">Github</a>
-        </div>
+  <div class="Head">
+    <div class="Left-Head">
+      <p>21estankevich</p>
+      <p id="at">@gmail.com</p>
     </div>
-    <div class="Center">
-        <p id="Center-head">Erik Sokolov</p>
-        <p id="Center-tail">Network Engineer</p>
+    <div class="Right-Head">
+      <a href="https://github.com/erikstankevich"><strong>Github</strong></a>
+      <p class="Small-Head">QWERik</p>
     </div>
-    <div class="Tail">
-        <p>Carl-von-Ossietky Str. 54, 65197 Wiesbaden</p>
-    </div>
+  </div>
+
+  <div class="Center">
+    <p id="Center-head"><strong>Erik SOKOLOV</strong></p>
+    <p id="Center-tail">Network Engineer</p>
+  </div>
+
+  <div class="Tail">
+    <p>Carl-von-Ossietky Str. 54, 65197 Wiesbaden</p>
+  </div>
 </div>
 
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">  
