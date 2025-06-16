@@ -10,7 +10,7 @@
   display: grid;
   place-items: center;
   font-family: 'EB Garamond';
-  background-color: rgba(41, 7, 5, 0.9);
+  background-color: rgb(95,95,95);
 }
 :global(body)::after {
   content: '';
@@ -32,12 +32,13 @@
   height: 11rem;
   width: 19rem;
   background-color: #eae6db;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 4px rgba(5, 5, 5, 0.9);
   overflow: hidden;
   z-index: 0;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.07'/></svg>");
   background-repeat: repeat;
   transform: rotate(-1deg);
+  border-radius: 1px;
 }
 
 .Head {
