@@ -10,7 +10,12 @@
   display: grid;
   place-items: center;
   font-family: 'EB Garamond';
-  background-color: rgba(31,7,5,0.9);
+  background-color: rgba(31, 7, 5, 0.9);
+}
+
+.ScaleWrapper {
+  transform: scale(2); /* Увеличиваем весь блок */
+  transform-origin: center center;
 }
 
 .Card {
@@ -88,25 +93,27 @@
 }
 </style>
 
-<div class="Card">
-  <div class="Head">
-    <div class="Left-Head">
-      <p>21estankevich</p>
-      <p id="at">@gmail.com</p>
+<div class="ScaleWrapper">
+  <div class="Card">
+    <div class="Head">
+      <div class="Left-Head">
+        <p>21estankevich</p>
+        <p id="at">@gmail.com</p>
+      </div>
+      <div class="Right-Head">
+        <a href="https://github.com/erikstankevich"><strong>Github</strong></a>
+        <p class="Small-Head">QWERik</p>
+      </div>
     </div>
-    <div class="Right-Head">
-      <a href="https://github.com/erikstankevich"><strong>Github</strong></a>
-      <p class="Small-Head">QWERik</p>
+
+    <div class="Center">
+      <p id="Center-head"><strong>Erik SOKOLOV</strong></p>
+      <p id="Center-tail">Network Engineer</p>
     </div>
-  </div>
 
-  <div class="Center">
-    <p id="Center-head"><strong>Erik SOKOLOV</strong></p>
-    <p id="Center-tail">Network Engineer</p>
-  </div>
-
-  <div class="Tail">
-    <p>Carl-von-Ossietky Str. 54, 65197 Wiesbaden</p>
+    <div class="Tail">
+      <p>Carl-von-Ossietky Str. 54, 65197 Wiesbaden</p>
+    </div>
   </div>
 </div>
 
