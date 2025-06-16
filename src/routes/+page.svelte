@@ -121,7 +121,7 @@
     </div>
 
     <div class="Tail">
-      <p>Carl-von-Ossietky Str. 54, 65197 Wiesbaden</p>
+      <p>An der Sandelmühle 13, 60439 Frankfurt </p>
     </div>
   </div>
 </div>
