@@ -10,11 +10,19 @@
   display: grid;
   place-items: center;
   font-family: 'EB Garamond';
-  background-color: rgba(31, 7, 5, 0.9);
+  background-color: rgba(41, 7, 5, 0.9);
+}
+:global(body)::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2); 
+  z-index: 0;
+  pointer-events: none;
 }
 
 .ScaleWrapper {
-  transform: scale(2); /* Увеличиваем весь блок */
+  transform: scale(1.5); 
   transform-origin: center center;
 }
 
