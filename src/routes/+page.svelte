@@ -92,6 +92,10 @@
   justify-content: center;
   font-size: 0.6rem;
 }
+.Tail a{
+  all: unset;
+  cursor: pointer;
+}
 
 .Card p,
 .Card a,
@@ -122,7 +126,7 @@
     </div>
 
     <div class="Tail">
-      <p>An der Sandelmühle 13, 60439 Frankfurt </p>
+      <a href="https://www.linkedin.com/in/erik-stankevich-046784363/">https://www.linkedin.com/in/erik-stankevich-046784363/</a>
     </div>
   </div>
 </div>
