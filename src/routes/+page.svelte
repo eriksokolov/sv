@@ -10,13 +10,14 @@
   display: grid;
   place-items: center;
   font-family: 'EB Garamond';
+  font-weight:100;
   background-color: rgb(95,95,95);
 }
 :global(body)::after {
   content: '';
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.2); 
+  background: rgba(0, 0, 0, 0.1); 
   z-index: 0;
   pointer-events: none;
 }
@@ -28,14 +29,15 @@
 
 .Card {
   position: relative;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding: 0.5rem;
   height: 11rem;
   width: 19rem;
   background-color: #eae6db;
   box-shadow: 0 4px 4px rgba(5, 5, 5, 0.9);
   overflow: hidden;
   z-index: 0;
-  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.07'/></svg>");
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.1'/></svg>");
   background-repeat: repeat;
   transform: rotate(-1deg);
   border-radius: 1px;
@@ -95,10 +97,9 @@
 .Card a,
 #Center-head,
 #Center-tail {
-  color: #3a2f1c;
+  color: #000;
   text-shadow:
-    0.8px 0.8px 0 #c8c4ba,
-   -0.8px -0.8px 0 #f5f2e7;
+   1px 1px 1px #fff;
 }
 </style>
 
