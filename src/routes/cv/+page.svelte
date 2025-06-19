@@ -26,7 +26,8 @@
         grid-template-areas:
         "title title"
         "P-Portrait P-Portrait"
-        "Education Education";
+        "Education Education"
+        "Work Work";
         justify-content: space-between;
         align-items: start;
     }
@@ -38,7 +39,7 @@
         height: 12rem;
         width: 12rem;
         border-radius: 9rem;
-        box-shadow: 1px 15px 9px rgba(0,0,0, 0.5)
+        border: 2px solid #fff;
     }
     .P-Portrait{
         grid-area: P-Portrait;
@@ -58,6 +59,21 @@
        justify-self: start; 
     }
     .Education button {
+        align-self: flex-start;
+    }
+    textarea{
+        all:unset;
+        padding: 1rem;
+        background-color: #fff;
+        border-radius: 2px;
+        white-space: pre-wrap;
+        font-size: 0.9rem;
+    }
+    .Work{
+        grid-area: Work;
+        display: grid;
+    }
+    .Work button{
         align-self: flex-start;
     }
 
@@ -94,6 +110,22 @@ Institution:
 NYPD
 Completion Date:
 1999"></textarea>
+        <button>Send</button>
+    </div>
+    <div class="Work">
+        <p>Work</p>
+        <textarea rows="11" placeholder=
+"Job Title:
+Detective
+Company:
+NYPD
+Start Date:
+1988
+End Date:
+1999
+Job Responsilities:
+Keep Neighbour self"
+        ></textarea>
         <button>Send</button>
     </div>
 </div>
