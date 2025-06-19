@@ -87,7 +87,7 @@
     <div class="P-Portrait">
         <div>
             <p>Personal information</p>
-            <textarea rows=9 placeholder=
+            <textarea rows=10 placeholder=
 "Full name:
 Max Payne
 Email:
@@ -103,7 +103,7 @@ Sherman Oaks"
     </div>
     <div class="Education">
         <p>Education</p>
-        <textarea  rows=9 placeholder=
+        <textarea  rows=10 placeholder=
 "Degree:
 The Bachelor
 Institution:
@@ -114,7 +114,7 @@ Completion Date:
     </div>
     <div class="Work">
         <p>Work</p>
-        <textarea rows="9" placeholder=
+        <textarea rows="10" placeholder=
 "Job Title:
 Detective
 Company:
