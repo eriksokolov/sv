@@ -114,7 +114,7 @@ Completion Date:
     </div>
     <div class="Work">
         <p>Work</p>
-        <textarea rows="11" placeholder=
+        <textarea rows="9" placeholder=
 "Job Title:
 Detective
 Company:
@@ -124,7 +124,7 @@ Start Date:
 End Date:
 1999
 Job Responsilities:
-Keep Neighbour self"
+Keep Neighbour save"
         ></textarea>
         <button>Send</button>
     </div>
