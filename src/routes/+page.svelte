@@ -34,12 +34,12 @@
   height: 11rem;
   width: 19rem;
   background-color: #eae6db;
-  box-shadow: 0 4px 4px rgba(5, 5, 5, 0.9);
+  box-shadow: 3px 3px 3px rgba(5, 5, 5, 0.3);
   overflow: hidden;
   z-index: 0;
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100'><filter id='noiseFilter'><feTurbulence type='fractalNoise' baseFrequency='0.15' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100' height='100' filter='url(%23noiseFilter)' opacity='0.1'/></svg>");
   background-repeat: repeat;
-  transform: rotate(-1deg);
+  transform: rotate(-1.8deg);
   border-radius: 1px;
 }
 
@@ -102,6 +102,7 @@
 .Tail a{
   all: unset;
   cursor: pointer;
+  padding-left: 0.2rem;
 }
 
 .Card p,
@@ -118,11 +119,11 @@
   <div class="Card">
     <div class="Head">
       <div class="Left-Head">
-        <a href="mailto:21estankevich@gmail.com">21estankevich</a>
+        <a href="mailto:21estankevich@gmail.com" target="blank">21estankevich</a>
         <p id="at">@gmail.com</p>
       </div>
       <div class="Right-Head">
-        <a href="https://github.com/erikstankevich">qwerik537</a>
+        <a href="https://github.com/erikstankevich" target="_blank">qwerik537</a>
         <p class="Small-Head">github.com</p>
       </div>
     </div>
@@ -133,7 +134,8 @@
     </div>
 
     <div class="Tail">
-      <a href="https://www.linkedin.com/in/erik-stankevich-046784363/">https://www.linkedin.com/in/erik-stankevich-046784363/</a>
+      <a href="https://www.linkedin.com/in/erik-stankevich-046784363/" target="_blank">linkedin.com/in/erik-stankevich-046784363/</a>
+
     </div>
   </div>
 </div>

@@ -126,6 +126,7 @@
     </div>
 
     <div class="Tail">
+      <p>Linkedin</p>
       <a href="https://www.linkedin.com/in/erik-stankevich-046784363/">https://www.linkedin.com/in/erik-stankevich-046784363/</a>
     </div>
   </div>
