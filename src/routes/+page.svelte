@@ -53,6 +53,13 @@
   font-size: 0.8rem;
 }
 
+.Right-Head{
+  display:flex;
+  justify-items:end;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
 .Head a {
   all: unset;
   cursor: pointer;
@@ -111,12 +118,12 @@
   <div class="Card">
     <div class="Head">
       <div class="Left-Head">
-        <p>21estankevich</p>
+        <a href="mailto:21estankevich@gmail.com">21estankevich</a>
         <p id="at">@gmail.com</p>
       </div>
       <div class="Right-Head">
-        <a href="https://github.com/erikstankevich"><strong>Github</strong></a>
-        <p class="Small-Head">QWERik</p>
+        <a href="https://github.com/erikstankevich">qwerik537</a>
+        <p class="Small-Head">github.com</p>
       </div>
     </div>
 
